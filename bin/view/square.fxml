@@ -1,0 +1,16 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.text.Text?>
+
+<VBox fx:controller="controller.squareController"
+	xmlns:fx="http://javafx.com/fxml">
+	<children>
+		<Label text="Please, enter side"/>
+		<HBox>
+		<TextField fx:id="sText"/>
+		<Button text="Send" fx:id="sSend" onAction="#squareSent"/>
+		<Button text="Back to choise" fx:id="sbButton" onAction="#sBack"/>
+		</HBox>
+	</children>
+</VBox>

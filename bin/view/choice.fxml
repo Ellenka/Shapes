@@ -1,0 +1,21 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.text.Text?>
+
+<VBox fx:controller="controller.choiceController"
+	xmlns:fx="http://javafx.com/fxml" spacing="10">
+	<children>
+		<Label text="Please, choose the shape" />
+
+		<HBox spacing="20">
+			<children>
+
+				<Button text="Circle" fx:id="cbutton" onAction="#circleChoice" />
+				<Button text="Square" fx:id="sbutton" onAction="#squareChoice" />
+				<Button text="Triangle" fx:id="tbutton" onAction="#triangleChoice" />
+			</children>
+		</HBox>
+	</children>
+
+</VBox>

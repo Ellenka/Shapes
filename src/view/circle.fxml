@@ -1,0 +1,16 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.text.Text?>
+
+<VBox fx:controller="controller.circleController"
+		xmlns:fx="http://javafx.com/fxml">
+	<children>
+		<Label text="Please, enter radius"/>
+		<HBox>
+		<TextField fx:id="cText"/>
+		<Button text="Send" fx:id="cSend" onAction="#circleSent"/>
+		<Button text="Back to choise" fx:id="cbButton" onAction="#cBack"/>
+		</HBox>
+	</children>
+</VBox>

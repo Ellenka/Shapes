@@ -1,0 +1,32 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.text.Text?>
+
+<VBox fx:controller="controller.triangleController"
+		xmlns:fx="http://javafx.com/fxml"
+		spacing="10">
+	<children>
+		<Label text="Please, enter sides"/>
+		<HBox spacing ="10">
+			<children>
+				<Label text="A"/>
+				<TextField fx:id="taText"/>
+			</children>
+		</HBox>
+		<HBox spacing ="10">
+			<children>
+			<Label text="B"/>
+			<TextField fx:id="tbText"/>
+			</children>
+		</HBox>
+		<HBox spacing ="10">
+			<children>
+			<Label text="C"/>
+			<TextField fx:id="tcText"/>
+			</children>
+		</HBox>
+		<Button text="Send" fx:id="tSend" onAction="#triangleSent"/>
+		<Button text="Back to choise" fx:id="tbButton" onAction="#tBack"/>
+	</children>
+</VBox>
